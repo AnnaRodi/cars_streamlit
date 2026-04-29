@@ -16,7 +16,7 @@ def show_main_page():
         layout="wide",
         initial_sidebar_state="auto",
         page_title="Demo Cars",
-        page_icon=image,
+        # page_icon=image,
 
     )
 
