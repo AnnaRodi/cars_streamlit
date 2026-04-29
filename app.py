@@ -10,7 +10,7 @@ def process_main_page():
 
 
 def show_main_page():
-    image = Image.open('data/cars.jpg')
+    # image = Image.open('data/cars.jpg')
 
     st.set_page_config(
         layout="wide",
@@ -27,7 +27,7 @@ def show_main_page():
         """
     )
 
-    st.image(image)
+    # st.image(image)
 
 
 def write_user_data(df):
