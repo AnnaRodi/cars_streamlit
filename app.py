@@ -64,7 +64,7 @@ def sidebar_input_features():
     name = st.text_input("Введите марку и модель машины", placeholder="e.g. Skoda Rapid 1.5 TDI Ambition")
     year = st.sidebar.slider("Год выпуска", min_value=1885, max_value=datetime.now().year, value=2026, step=1)
     km_driven = st.sidebar.slider("Пробег", min_value=0, max_value=10000000000, value=0, step=1000)
-    fuel = st.sidebar.selectbox("Топливо", ('Diesel', 'Petrol', 'LPG', 'CNG')
+    fuel = st.sidebar.selectbox("Топливо", ('Diesel', 'Petrol', 'LPG', 'CNG'))
     seller_type = st.sidebar.selectbox("Продавец", ('Individual', 'Dealer', 'Trustmark Dealer'))
     transmission = st.sidebar.selectbox("Трансмиссия", ('Manual', 'Automatic'))
     owner = st.sidebar.selectbox("Владелец", ('First Owner',  'Second Owner', 'Third Owner', 'Fourth & Above Owner', 'Test Drive Car'))
