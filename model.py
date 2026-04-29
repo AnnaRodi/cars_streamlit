@@ -28,7 +28,7 @@ def preprocess_data(df: pd.DataFrame, test=True):
     cols = ['engine', 'mileage', 'max_power', 'torque']
     for col in cols:
         X_df[col] = pd.to_numeric(X_df[col].astype(str).str.extract(r'(\d+\.?\d*)', expand=False), errors='coerce')
-        X_df[col].fillna(X_df[col].median(), inplace=True)
+        X_df[col] = X_df[col].fillna(X_df[col].median())
 
     #объектные в числовые
     feats = ['owner', 'fuel', 'seller_type', 'transmission']
