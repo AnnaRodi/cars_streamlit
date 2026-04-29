@@ -67,29 +67,8 @@ def load_model_and_predict(df, path="data/model_weights.mw"):
         model = load(file)
 
     prediction = model.predict(df)[0]
-    # prediction = np.squeeze(prediction)
 
-    prediction_proba = model.predict_proba(df)[0]
-    # prediction_proba = np.squeeze(prediction_proba)
-
-    # encode_prediction_proba = {
-    #     0: "Вам не повезло с вероятностью",
-    #     1: "Вы выживете с вероятностью"
-    # }
-
-    # encode_prediction = {
-    #     0: "Сожалеем, вам не повезло",
-    #     1: "Ура! Вы будете жить"
-    # }
-
-    # prediction_data = {}
-    # for key, value in encode_prediction_proba.items():
-    #     prediction_data.update({value: prediction_proba[key]})
-
-    # prediction_df = pd.DataFrame(prediction_data, index=[0])
-    # prediction = encode_prediction[prediction]
-
-    return prediction, prediction_proba   #prediction_df
+    return prediction  
 
 
 if __name__ == "__main__":
