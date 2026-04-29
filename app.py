@@ -39,8 +39,8 @@ def write_prediction(prediction):
     st.write("## Предсказание")
     st.write(prediction)
 
-    st.write("## Вероятность предсказания")
-    st.write("prediction_probas")
+    # st.write("## Вероятность предсказания")
+    # st.write("prediction_probas")
 
 
 def process_side_bar_inputs():
