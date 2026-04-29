@@ -35,12 +35,12 @@ def write_user_data(df):
     st.write(df)
 
 
-def write_prediction(prediction, prediction_probas):
+def write_prediction(prediction):
     st.write("## Предсказание")
     st.write(prediction)
 
     st.write("## Вероятность предсказания")
-    st.write(prediction_probas)
+    st.write("prediction_probas")
 
 
 def process_side_bar_inputs():
@@ -55,8 +55,8 @@ def process_side_bar_inputs():
     user_X_df = preprocessed_X_df[:1]
     write_user_data(user_X_df)
 
-    prediction, prediction_probas = load_model_and_predict(user_X_df)
-    write_prediction(prediction, prediction_probas)
+    prediction= load_model_and_predict(user_X_df)
+    write_prediction(prediction)
 
 
 def sidebar_input_features():
