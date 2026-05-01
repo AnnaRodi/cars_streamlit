@@ -68,7 +68,7 @@ def sidebar_input_features():
     seller_type = st.sidebar.selectbox("Продавец", ('Individual', 'Dealer', 'Trustmark Dealer'))
     transmission = st.sidebar.selectbox("Трансмиссия", ('Manual', 'Automatic'))
     owner = st.sidebar.selectbox("Владелец", ('First Owner',  'Second Owner', 'Third Owner', 'Fourth & Above Owner', 'Test Drive Car'))
-    mileage = st.slider("Расход топлива", min_value=0, max_value=50, value=10, step=0.1)    
+    mileage = st.slider("Расход топлива", min_value=0, max_value=50, value=10, step=1)    
     engine = st.slider("Двигатель", min_value=0, max_value=5000, value=1500, step=1)    
     max_power = st.slider("Мощность", min_value=0, max_value=150, value=90, step=1)    
     torque = st.slider("Крутящий момент", min_value=0, max_value=500, value=200, step=1)  
