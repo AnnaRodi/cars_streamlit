@@ -61,7 +61,7 @@ def process_side_bar_inputs():
 
 def sidebar_input_features():
     # 'name', 'year', 'km_driven', 'fuel', 'seller_type', 'transmission', 'owner', 'mileage', 'engine', 'max_power', 'torque', 'seats'
-    name = st.text_input("Введите марку и модель машины", placeholder="e.g. Skoda Rapid 1.5 TDI Ambition")
+    name = st.text_input("Введите марку и модель машины", placeholder="Skoda Rapid")
     year = st.sidebar.slider("Год выпуска", min_value=1885, max_value=2026, value=2026, step=1)
     km_driven = st.sidebar.slider("Пробег", min_value=0, max_value=1000000, value=0, step=1000)
     fuel = st.sidebar.selectbox("Топливо", ('Diesel', 'Petrol', 'LPG', 'CNG'))
