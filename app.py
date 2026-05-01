@@ -56,7 +56,7 @@ def process_side_bar_inputs():
     write_user_data(user_X_df)
 
     prediction= load_model_and_predict(user_X_df)
-    write_prediction(prediction, type(prediction)
+    write_prediction(prediction, type(prediction))
 
 
 def sidebar_input_features():
