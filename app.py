@@ -68,10 +68,10 @@ def sidebar_input_features():
     seller_type = st.sidebar.selectbox("Продавец", ('Individual', 'Dealer', 'Trustmark Dealer'))
     transmission = st.sidebar.selectbox("Трансмиссия", ('Manual', 'Automatic'))
     owner = st.sidebar.selectbox("Владелец", ('First Owner',  'Second Owner', 'Third Owner', 'Fourth & Above Owner', 'Test Drive Car'))
-    mileage = st.text_input("Введите расход топлива", placeholder="e.g. 23.4 kmpl")    
-    engine = st.text_input("Введите двигатель", placeholder="e.g. 1248 CC")    
-    max_power = st.text_input("Введите мощность", placeholder="e.g. 74 bhp")    
-    torque = st.text_input("Введите крутящий момент двигателя", placeholder="e.g. 190Nm@ 2000rpm")   
+    mileage = st.slider("Введите расход топлива", min_value=0, max_value=50, value=10, step=0.1)    
+    engine = st.slider("Введите двигатель", min_value=0, max_value=5000, value=1500, step=1)    
+    max_power = st.slider("Введите мощность", min_value=0, max_value=150, value=90, step=1)    
+    torque = st.slider("Введите крутящий момент двигателя", , min_value=0, max_value=500, value=200, step=1)  
     seats = st.sidebar.slider("Число сидений", min_value=1, max_value=100, value=5, step=1)
        
     data = {
