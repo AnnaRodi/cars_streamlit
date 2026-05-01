@@ -55,7 +55,7 @@ def process_side_bar_inputs():
     user_X_df = preprocessed_X_df[:1]
     write_user_data(user_X_df)
 
-    prediction= load_model_and_predict(user_X_df)
+    prediction= load_model_and_predict(user_X_df).toint()
     write_prediction(prediction)
 
 
