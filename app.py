@@ -37,7 +37,7 @@ def write_user_data(df):
 
 def write_prediction(*prediction):
     st.write("## Предсказание")
-    st.write(prediction)
+    st.write(*prediction)
 
     # st.write("## Вероятность предсказания")
     # st.write("prediction_probas")
